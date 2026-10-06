@@ -167,7 +167,7 @@ See [examples/ci-workflow.yml](examples/ci-workflow.yml) for a full workflow inc
 
 ## Contributing
 
-Bug reports, false-positive reports (please include the file that triggered it) and new rules are all welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the layout, how to add a rule in one file, and how the severity calibration works. Run the tests with `python -m unittest` (no extra dependencies).
+Bug reports, false-positive reports (please include the file that triggered it) and new rules are all welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the layout, how to add a rule in one file, and how the severity calibration works. Run the tests with `python -m unittest discover -s tests` (no extra dependencies).
 
 ## Related work
 

@@ -57,7 +57,7 @@ Guidelines:
 
 ```bash
 pip install -e .
-python -m unittest -v                    # tests
+python -m unittest discover -s tests -v   # tests
 trapscan . --exclude 'src/trapscan/rules/*'   # self-scan (the rule sources naturally trip the content rules)
 python examples/make_demo_repo.py /tmp/demo && trapscan /tmp/demo
 ```
