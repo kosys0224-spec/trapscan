@@ -1,0 +1,21 @@
+name: Bug report
+description: A crash, wrong output, or installation problem
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: trapscan --version, Python version, OS
+    validations:
+      required: true
