@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trapscan"
+version = "0.1.0"
+description = "Scan a repository for things that execute the moment you open it: editor auto-tasks, devcontainer host commands, git config traps, install hooks, AI-agent hooks and prompt injection, hidden Unicode."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Inhyeok Park" }]
+keywords = ["security", "git", "supply-chain", "vscode", "devcontainer", "prompt-injection", "claude-code", "cursor", "scanner", "cli"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kosys0224-spec/trapscan"
+Issues = "https://github.com/kosys0224-spec/trapscan/issues"
+Changelog = "https://github.com/kosys0224-spec/trapscan/blob/main/CHANGELOG.md"
+
+[project.scripts]
+trapscan = "trapscan.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+trapscan = ["py.typed"]
